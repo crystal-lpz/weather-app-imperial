@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=K2D:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://moment.github.io/luxon/global/luxon.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+
+    <title>Weather</title>
+  </head>
+  <body>
+    
+    <div class="container mt-4">
+      <div class="row" id="current-time-" >
+          <span id="last-update"></span>
+        </div>
+      <div class="weather-app">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-6">
+              
+              <input
+                type="search"
+                placeholder="Type a city.."
+                autofocus="on"
+                autocomplete="off"
+                id="city-input"
+                class="form-control shadow-sm"
+              />
+            </div>
+              <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-outline-danger shadow-sm"
+                id="search"
+              />
+            </div>
+        </form>  
+             <div class="col-3">
+              <input
+                type="submit"
+                value="Current"
+                class="form-control btn btn-danger shadow-sm"
+                id="current-location"
+              />
+            </div>
+      </div>
+        <div class="weather-content">
+            <div>
+                <h1><span id="main-temp"></span>°F</h1>
+                
+                <h2></h2>
+                <h3 id="description"></h3>
+               <h4>
+                H: <span id="max-temp"> </span>  L: <span id="min-temp"> </span>
+               </h4> 
+                <ul>
+                    <div class="weather-description text-center">
+                     <li> Humidity: <span id="humidity"> </span> %</li>
+                     <li>Wind: <span id="wind-speed"> </span> <span id="windspeed-unit">mph</span></li>
+                     
+                    </div>
+                      </ul>
+            </div>
+              <div class="seven-day-forecast" id="forecast">
+               
+                
+       </div>
+        </div>
+
+      
+        
+        <!-- <div class="row" id="main-row">
+           <div class="col-6"> 
+           <div class="row">
+          
+                <div class="col-4" >
+                 
+                 </div>
+
+                <div class="col-4">
+                <strong id="main-temp"></strong>
+                <span class="units"><a href="#" id="fahrenheit-link" class="active">°F </a> | <a href="#" id="celsius-link"> °C</a></span> 
+                 </div>
+   
+                   <div class="col-4">
+                      <ul><div class="weather-description">
+                     <li> Humidity: <span id="humidity"></span> %</li>
+                     <li>Wind: <span id="wind-speed"> </span> <span id="windspeed-unit">mph</span></li>
+                     <li>H: <span id="max-temp"> </span>  L: <span id="min-temp"> </span></li>
+                    </div>
+                      </ul>
+                    </div>
+           </div>
+           </div>
+                <div class="col-6" id="cityInfo"> 
+                <h1></h1>
+                <ul>
+                <li class="timeHeader" id="time-placement"></li>
+                <li class="description" id="description"></li>  
+               </ul>
+                </div> 
+          
+        </div>
+
+        <div class="seven-day-forecast" id="forecast">
+       </div>
+  
+    </div>
+      <h5> <a href="https://github.com/crystal-lpz/weather-app-project"target="_blank" class="sourceLink">Open-source code </a>by Crystal Lopez</h5>
+    </div>
+    </div> -->
+     <script src="src/index.js"></script>
+  </body>
+
+</html>
